@@ -1,5 +1,5 @@
-INC = inc/linked_list.h
-SRC = src/linked_list.c
+INC = inc/node.h inc/linked_list.h
+SRC = src/node.c src/linked_list.c
 MAIN = main.c
 
 compile:

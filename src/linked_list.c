@@ -1,12 +1,5 @@
 #include "../inc/linked_list.h"
 
-NODE *create_node(int item) {
-	NODE *node = (NODE *) malloc(sizeof(NODE));
-	node->next = NULL;
-	node->item = item;
-	return node;
-}
-
 LIST *create_list() {
 	LIST *l = (LIST *) malloc(sizeof(LIST));
 	l->head = NULL;
