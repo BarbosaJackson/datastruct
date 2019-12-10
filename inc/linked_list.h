@@ -5,7 +5,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 typedef struct list LIST;
-typedef struct node NODE;
+// typedef struct node NODE;
 struct list {
 	NODE *head;
 	int size;

@@ -8,7 +8,6 @@ LIST *create_list() {
 }
 
 void add(LIST *l, int item) {
-	printf("insert %d\n", item);
 	if(l->head == NULL) {
 		l->head = create_node(item);
 		l->size++;
@@ -29,7 +28,6 @@ NODE *search_element(LIST *l, int item) {
 void remove_element(LIST *l, int item) {
 	NODE *prev = NULL;
 	NODE *cur = l->head;
-	printf("removing %d\n", item);
 	while(cur != NULL && cur->item != item) {
 		prev = cur;
 		cur = cur->next;
